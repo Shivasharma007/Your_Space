@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login and Registration</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .home{
+    min-height: 50vh;
+    background:url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:3rem 2rem;
+}
+
+  .form-container {
+    background-color: #fff;
+    box-shadow: 50px 50px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 150px 50px;
+    overflow: hidden;
+    width: 700px;
+    max-width: 100%;
+    display: flex;
+  }
+
+  .form-left,
+  .form-right {
+    flex: 1;
+    padding: 90px;
+  }
+
+  .form-left {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .toggle-btn {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .toggle-btn a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .toggle-btn a:hover {
+    color: #0056b3;
+  }
+</style>
+</head>
+<body background="C:\Users\asus\OneDrive\Desktop\194649_realestate_website (2)\real-estate website\images\home-bg.jpg">
+<div class="home" id="home">
+<div class="form-container">
+  <div class="form-left">
+    <h1>Login</h1>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <button>Login</button>
+    <div class="toggle-btn">
+      <p>Don't have an account? <a href="index.html">Register</a></p>
+    </div>
+  </div>
+  <div class="form-right">
+    <h1>Register</h1>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <button>Register</button>
+    <div class="toggle-btn">
+      <p>Already have an account? <a href="index.html">Login</a></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
